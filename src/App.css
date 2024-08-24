@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+
+body {
+    background: #1b1b2f;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c2c3e;
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.nav-brand {
+    font-size: 2rem;
+    color: #f1c40f;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links.open {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #2c2c3e;
+    padding: 15px 0;
+    border-top: 2px solid #f1c40f;
+}
+
+.currency-btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.currency-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+input {
+    padding: 12px;
+    border-radius: 25px;
+    border: 2px solid #444;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #15151c;
+    background: #fff;
+    max-width: 200px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    background: #e0e0e0;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.profile-icon {
+    font-size: 2rem;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+    color: #f1c40f;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f1c40f;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.open {
+        display: block;
+    }
+
+    .nav-links.open input {
+        margin: 10px 0;
+        width: 90%;
+    }
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(35, 35, 68, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+thead {
+    background-color: #e67e22;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 18px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #3a3a55;
+    transition: background-color 0.3s ease;
+}
+
+.rank, .symbol, .logo p {
+    color: #f1c40f;
+}
+
+.logo img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #15151c, #1f1f2e);
+}
+
+/* Navbar Styles */
+.navbar {
+    border-bottom: 2px solid #f39c12;
+    border-radius: 0 0 12px 12px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background: #1a1a2e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Currency Button Styles */
+.currency-btn {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    border: 2px solid #f39c12;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.currency-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Styles */
+input {
+    border: 2px solid #1f1f2e;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input:focus {
+    border-color: #f39c12;
+}
+
+/* Table Styles */
+table {
+    border: 1px solid #444;
+}
+
+thead th {
+    background: #e67e22;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+tbody tr:hover {
+    background: rgba(58, 58, 85, 0.8);
+}
+
+/* Logo Image Styles */
+.logo img {
+    border: 2px solid #f39c12;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        border-bottom: none;
+    }
+    
+    .currency-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
+/* Table Styles */
+/* Table Styles */
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: separate; /* Ensure border-radius applies correctly */
+    border-spacing: 0; /* Remove default spacing between cells */
+    border-radius: 12px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+    background: rgba(35, 35, 68, 0.9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Add depth with shadow */
+}
+
+/* Table Header */
+thead {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+th {
+    padding: 15px;
+    border-bottom: 2px solid #444;
+    text-align: center;
+}
+
+/* Table Cells */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+/* Header Cell Borders */
+thead th:first-child {
+    border-top-left-radius: 12px; /* Rounded top-left corner */
+}
+
+thead th:last-child {
+    border-top-right-radius: 12px; /* Rounded top-right corner */
+}
+
+/* Remove border from last row for rounded bottom corners */
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px; /* Rounded bottom-left corner */
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px; /* Rounded bottom-right corner */
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #3a3a55;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo Image Styles */
+.logo img {
+    border-radius: 50%; /* Rounded logo images */
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f2e;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Adjusting body padding to account for fixed navbar */
+body {
+    padding-top: 70px; /* Adjust this value to match the height of your navbar */
+}
+
+/* Navbar Brand */
+.nav-brand {
+    font-size: 1.5rem;
+    color: #f39c12;
+    font-weight: 600;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #1f1f2e;
+    padding: 10px 0;
+}
+
+/* Currency Buttons */
+.currency-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.currency-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+/* Specific Styles for Currency Buttons */
+.usd-btn {
+    background: linear-gradient(135deg, #f39c12, #f1c40f);
+}
+
+.inr-btn {
+    background: linear-gradient(135deg, #f39c12, #f1c40f);
+}
+
+/* Input Field */
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 15px;
+    font-size: 1rem;
+    color: #15151c;
+    background: #fff;
+    max-width: 180px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    background: #e0e0e0;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.open {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1f1f2e;
+        padding: 10px 0;
+    }
+
+    .nav-links.open input {
+        margin: 10px 0;
+        width: 80%;
+    }
+}
